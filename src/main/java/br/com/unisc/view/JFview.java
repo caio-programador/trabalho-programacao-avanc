@@ -1,3 +1,5 @@
+package br.com.unisc.view;
+
 import javax.swing.*;
 import java.awt.*;
 
