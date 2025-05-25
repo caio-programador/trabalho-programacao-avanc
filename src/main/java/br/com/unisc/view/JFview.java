@@ -29,6 +29,11 @@
             JComboBox<String> comboUF = new JComboBox<>();
             JLabel labCidade = new JLabel("Cidade");
             JComboBox<String> comboCidades = new JComboBox<>();
+
+            Dimension comboSize = new Dimension(200, 20);
+            comboUF.setPreferredSize(comboSize);
+            comboCidades.setPreferredSize(comboSize);
+
             JPmid.add(labUf);
             JPmid.add(comboUF);
             JPmid.add(labCidade);
