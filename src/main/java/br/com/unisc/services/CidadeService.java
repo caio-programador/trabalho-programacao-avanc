@@ -25,7 +25,7 @@ public class CidadeService {
                     c.id AS cidade_id,
                     c.nome_cidade
                 FROM tb_cidade c
-                WHERE c.estado_id = 23;
+                WHERE c.estado_id = ?;
                 """;
     try(PreparedStatement st = connection.getConnection().prepareStatement(query)) {
       st.setLong(1, estadoId);
