@@ -1,100 +1,110 @@
 package br.com.unisc.entities;
 
 public class Cidade {
-    private int id;
-    private String nome;
-    private Estado estado;
-    private Double mediaIfdmSaude;
-    private Double mediaIfdmEducacao;
-    private Double mediaIfdmRenda;
-    private Double mediaIfdmGeral;
-    private int rankingNacional;
-    private int rankingEstadual;
+  private Long id;
+  private String nome;
+  private Estado estado;
+  private Double mediaIfdmSaude;
+  private Double mediaIfdmEducacao;
+  private Double mediaIfdmRenda;
+  private Double mediaIfdmGeral;
+  private int rankingNacional;
+  private int rankingEstadual;
 
-    public Cidade(int id, String nome, Estado estado,
-                  Double mediaIfdmSaude, Double mediaIfdmEducacao,
-                  Double mediaIfdmRenda, Double mediaIfdmGeral,
-                  int rankingNacional, int rankingEstadual) {
-        this.id = id;
-        this.nome = nome;
-        this.estado = estado;
-        this.mediaIfdmSaude = mediaIfdmSaude;
-        this.mediaIfdmEducacao = mediaIfdmEducacao;
-        this.mediaIfdmRenda = mediaIfdmRenda;
-        this.mediaIfdmGeral = mediaIfdmGeral;
-        this.rankingNacional = rankingNacional;
-        this.rankingEstadual = rankingEstadual;
-    }
+  public Cidade(Long id, String nome, Estado estado,
+                Double mediaIfdmSaude, Double mediaIfdmEducacao,
+                Double mediaIfdmRenda, Double mediaIfdmGeral,
+                int rankingNacional, int rankingEstadual) {
+    this.id = id;
+    this.nome = nome;
+    this.estado = estado;
+    this.mediaIfdmSaude = mediaIfdmSaude;
+    this.mediaIfdmEducacao = mediaIfdmEducacao;
+    this.mediaIfdmRenda = mediaIfdmRenda;
+    this.mediaIfdmGeral = mediaIfdmGeral;
+    this.rankingNacional = rankingNacional;
+    this.rankingEstadual = rankingEstadual;
+  }
 
-    public int getId() {
-        return id;
-    }
+  public Cidade(Long id, String nome) {
+    this.id = id;
+    this.nome = nome;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public String getNome() {
-        return nome;
-    }
+  public void setId(Long id) {
+    this.id = id;
+  }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+  public String getNome() {
+    return nome;
+  }
 
-    public Estado getEstado() {
-        return estado;
-    }
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
-    }
+  public Estado getEstado() {
+    return estado;
+  }
 
-    public Double getMediaIfdmSaude() {
-        return mediaIfdmSaude;
-    }
+  public void setEstado(Estado estado) {
+    this.estado = estado;
+  }
 
-    public void setMediaIfdmSaude(Double mediaIfdmSaude) {
-        this.mediaIfdmSaude = mediaIfdmSaude;
-    }
+  public Double getMediaIfdmSaude() {
+    return mediaIfdmSaude;
+  }
 
-    public Double getMediaIfdmEducacao() {
-        return mediaIfdmEducacao;
-    }
+  public void setMediaIfdmSaude(Double mediaIfdmSaude) {
+    this.mediaIfdmSaude = mediaIfdmSaude;
+  }
 
-    public void setMediaIfdmEducacao(Double mediaIfdmEducacao) {
-        this.mediaIfdmEducacao = mediaIfdmEducacao;
-    }
+  public Double getMediaIfdmEducacao() {
+    return mediaIfdmEducacao;
+  }
 
-    public Double getMediaIfdmRenda() {
-        return mediaIfdmRenda;
-    }
+  public void setMediaIfdmEducacao(Double mediaIfdmEducacao) {
+    this.mediaIfdmEducacao = mediaIfdmEducacao;
+  }
 
-    public void setMediaIfdmRenda(Double mediaIfdmRenda) {
-        this.mediaIfdmRenda = mediaIfdmRenda;
-    }
+  public Double getMediaIfdmRenda() {
+    return mediaIfdmRenda;
+  }
 
-    public Double getMediaIfdmGeral() {
-        return mediaIfdmGeral;
-    }
+  public void setMediaIfdmRenda(Double mediaIfdmRenda) {
+    this.mediaIfdmRenda = mediaIfdmRenda;
+  }
 
-    public void setMediaIfdmGeral(Double mediaIfdmGeral) {
-        this.mediaIfdmGeral = mediaIfdmGeral;
-    }
+  public Double getMediaIfdmGeral() {
+    return mediaIfdmGeral;
+  }
 
-    public int getRankingNacional() {
-        return rankingNacional;
-    }
+  public void setMediaIfdmGeral(Double mediaIfdmGeral) {
+    this.mediaIfdmGeral = mediaIfdmGeral;
+  }
 
-    public void setRankingNacional(int rankingNacional) {
-        this.rankingNacional = rankingNacional;
-    }
+  public int getRankingNacional() {
+    return rankingNacional;
+  }
 
-    public int getRankingEstadual() {
-        return rankingEstadual;
-    }
+  public void setRankingNacional(int rankingNacional) {
+    this.rankingNacional = rankingNacional;
+  }
 
-    public void setRankingEstadual(int rankingEstadual) {
-        this.rankingEstadual = rankingEstadual;
-    }
+  public int getRankingEstadual() {
+    return rankingEstadual;
+  }
+
+  public void setRankingEstadual(int rankingEstadual) {
+    this.rankingEstadual = rankingEstadual;
+  }
+
+  @Override
+  public String toString() {
+    return nome;
+  }
 }

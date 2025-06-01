@@ -1,79 +1,90 @@
 package br.com.unisc.entities;
 
 public class Estado {
-    private int id;
-    private String sigla;
-    private String nome;
-    private Double mediaIfdmSaude;
-    private Double mediaIfdmEducacao;
-    private Double mediaIfdmRenda;
-    private Double mediaIfdmGeral;
+  private Long id;
+  private String sigla;
+  private String nome;
+  private Double mediaIfdmSaude;
+  private Double mediaIfdmEducacao;
+  private Double mediaIfdmRenda;
+  private Double mediaIfdmGeral;
 
-    public Estado(int id, String sigla, String nome,
-                  Double mediaIfdmSaude, Double mediaIfdmEducacao,
-                  Double mediaIfdmRenda, Double mediaIfdmGeral) {
-        this.id = id;
-        this.sigla = sigla;
-        this.nome = nome;
-        this.mediaIfdmSaude = mediaIfdmSaude;
-        this.mediaIfdmEducacao = mediaIfdmEducacao;
-        this.mediaIfdmRenda = mediaIfdmRenda;
-        this.mediaIfdmGeral = mediaIfdmGeral;
-    }
+  public Estado(Long id, String sigla, String nome,
+                Double mediaIfdmSaude, Double mediaIfdmEducacao,
+                Double mediaIfdmRenda, Double mediaIfdmGeral) {
+    this.id = id;
+    this.sigla = sigla;
+    this.nome = nome;
+    this.mediaIfdmSaude = mediaIfdmSaude;
+    this.mediaIfdmEducacao = mediaIfdmEducacao;
+    this.mediaIfdmRenda = mediaIfdmRenda;
+    this.mediaIfdmGeral = mediaIfdmGeral;
+  }
 
-    public int getId() {
-        return id;
-    }
+  public Estado(Long id, String sigla, String nome) {
+    this.id = id;
+    this.sigla = sigla;
+    this.nome = nome;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public String getSigla() {
-        return sigla;
-    }
+  public void setId(Long id) {
+    this.id = id;
+  }
 
-    public void setSigla(String sigla) {
-        this.sigla = sigla;
-    }
+  public String getSigla() {
+    return sigla;
+  }
 
-    public String getNome() {
-        return nome;
-    }
+  public void setSigla(String sigla) {
+    this.sigla = sigla;
+  }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+  public String getNome() {
+    return nome;
+  }
 
-    public Double getMediaIfdmSaude() {
-        return mediaIfdmSaude;
-    }
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
 
-    public void setMediaIfdmSaude(Double mediaIfdmSaude) {
-        this.mediaIfdmSaude = mediaIfdmSaude;
-    }
+  public Double getMediaIfdmSaude() {
+    return mediaIfdmSaude;
+  }
 
-    public Double getMediaIfdmEducacao() {
-        return mediaIfdmEducacao;
-    }
+  public void setMediaIfdmSaude(Double mediaIfdmSaude) {
+    this.mediaIfdmSaude = mediaIfdmSaude;
+  }
 
-    public void setMediaIfdmEducacao(Double mediaIfdmEducacao) {
-        this.mediaIfdmEducacao = mediaIfdmEducacao;
-    }
+  public Double getMediaIfdmEducacao() {
+    return mediaIfdmEducacao;
+  }
 
-    public Double getMediaIfdmRenda() {
-        return mediaIfdmRenda;
-    }
+  public void setMediaIfdmEducacao(Double mediaIfdmEducacao) {
+    this.mediaIfdmEducacao = mediaIfdmEducacao;
+  }
 
-    public void setMediaIfdmRenda(Double mediaIfdmRenda) {
-        this.mediaIfdmRenda = mediaIfdmRenda;
-    }
+  public Double getMediaIfdmRenda() {
+    return mediaIfdmRenda;
+  }
 
-    public Double getMediaIfdmGeral() {
-        return mediaIfdmGeral;
-    }
+  public void setMediaIfdmRenda(Double mediaIfdmRenda) {
+    this.mediaIfdmRenda = mediaIfdmRenda;
+  }
 
-    public void setMediaIfdmGeral(Double mediaIfdmGeral) {
-        this.mediaIfdmGeral = mediaIfdmGeral;
-    }
+  public Double getMediaIfdmGeral() {
+    return mediaIfdmGeral;
+  }
+
+  public void setMediaIfdmGeral(Double mediaIfdmGeral) {
+    this.mediaIfdmGeral = mediaIfdmGeral;
+  }
+
+  @Override
+  public String toString() {
+    return nome;
+  }
 }
