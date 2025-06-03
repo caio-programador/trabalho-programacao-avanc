@@ -247,8 +247,8 @@ public class JFview extends JFrame {
       txtMunicipioEducacaoMedia.setText(String.valueOf(cidadeSelecionada.getMediaIfdmEducacao()));
       txtMunicipioRendaMedia.setText(String.valueOf(cidadeSelecionada.getMediaIfdmRenda()));
       txtMunicipioIfdmMedia.setText(String.valueOf(cidadeSelecionada.getMediaIfdmGeral()));
-      txtRankNacional.setText(String.valueOf(cidadeSelecionada.getRankingNacional()));
-      txtRankEst.setText(String.valueOf(cidadeSelecionada.getRankingEstadual()));
+      txtRankNacional.setText(String.valueOf(cidadeSelecionada.getRankingNacional())+"°");
+      txtRankEst.setText(String.valueOf(cidadeSelecionada.getRankingEstadual())+"°");
     }
   }
 }
